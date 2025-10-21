@@ -9,7 +9,7 @@ import java.util.Date;
 import java.util.Objects;
 
 @JsonPropertyOrder({"id", "firstName", "lastName", "gender", "addressName",})
-@JsonFilter("PersonFilter")
+//@JsonFilter("PersonFilter") não tem como usar com o serialization converter/content negotiation
 public class PersonDTO implements Serializable {
     private static final long serialVersionUID = 1L;
 
